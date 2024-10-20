@@ -78,24 +78,10 @@ Retrieved 6 out of 6 records
 ID: 521018861, DOI: 10.1002/2688-8319.12147, Title: Bringing back the Manchester Argus Coenonympha tullia ssp. davus (Fabricius, 1777): quantifying the habitat resource requirements to inform the successful reintroduction of a specialist peatland butterfly, Year: 2022
 Abstract is available. Token count: 217
 Full-text is available. Token count: 8305
-ID: 521018861, DOI: 10.1002/2688-8319.12147, Title: Bringing back the Manchester Argus Coenonympha tullia ssp. davus (Fabricius, 1777): quantifying the habitat resource requirements to inform the successful reintroduction of a specialist peatland butterfly, Year: 2022
-Abstract is available. Token count: 217
-Full-text is available. Token count: 8305
-ID: 521018861, DOI: 10.1002/2688-8319.12147, Title: Bringing back the Manchester Argus Coenonympha tullia ssp. davus (Fabricius, 1777): quantifying the habitat resource requirements to inform the successful reintroduction of a specialist peatland butterfly, Year: 2022
-Abstract is available. Token count: 217
-Full-text is available. Token count: 8305
-ID: 521018861, DOI: 10.1002/2688-8319.12147, Title: Bringing back the Manchester Argus Coenonympha tullia ssp. davus (Fabricius, 1777): quantifying the habitat resource requirements to inform the successful reintroduction of a specialist peatland butterfly, Year: 2022
-Abstract is available. Token count: 217
-Full-text is available. Token count: 8305
-ID: 521018861, DOI: 10.1002/2688-8319.12147, Title: Bringing back the Manchester Argus Coenonympha tullia ssp. davus (Fabricius, 1777): quantifying the habitat resource requirements to inform the successful reintroduction of a specialist peatland butterfly, Year: 2022
-Abstract is available. Token count: 217
-Full-text is available. Token count: 8305
-ID: 521018861, DOI: 10.1002/2688-8319.12147, Title: Bringing back the Manchester Argus Coenonympha tullia ssp. davus (Fabricius, 1777): quantifying the habitat resource requirements to inform the successful reintroduction of a specialist peatland butterfly, Year: 2022
-Abstract is available. Token count: 217
-Full-text is available. Token count: 8305
+...
 ```
 
-Here, the record was found in the ASK database, and both the abstract and full-text were available. However, there were multiple duplicate entries for this DOI.
+Here, the record was found in the ASK database, and both the abstract and full-text were available. However, there were six duplicate entries for this DOI.
 
 #### Task: Query ASK for a List of DOIs
 
@@ -124,7 +110,9 @@ Please enter the path to the CSV file to log processed DOIs: ../data/all-publica
 
 #### Data Statistics
 
-The file [/all-publications/ask-fulltext/publications_tdm.csv](/all-publications/ask-fulltext/publications_tdm.csv) contains the responses returned from ASK. 
+The file [10.5281/zenodo.13956882](https://www.doi.org/10.5281/zenodo.13956882) contains the responses returned from ASK. 
+
+Note: the data file is hosted on zenodo due to github repository storage limits.
 
 Out of a total of 49,438 queried DOIs, the statistics for those found in the ASK database are as follows:
 
@@ -143,36 +131,41 @@ Out of a total of 49,438 queried DOIs, the statistics for those found in the ASK
 - **Max Full-text Length**: 123,958 tokens
 - **Average Full-text Length**: 7,667.09 tokens
 
-
-#### Data Statistics
-
-The file `/all-publications/ask-fulltext/publications_tdm.csv` contains the returned response from ASK
-
-For a total of 49,438 DOIs queried, the numbers for those found in the ASK database are shown below.
-
-Total DOIs (rows) processed: 12,636
-Rows with no abstracts and no full-text: 36   (this indicates that the returned abstract token count was less than 10)
-Rows with abstracts but no full-text: 9,766
-Rows with both abstracts and full-text: 2,816
-
-Abstract Length Statistics (only where both abstract and full-text are present):
-Min Abstract Length: 10
-Max Abstract Length: 1,608
-Avg Abstract Length: 235.4695596884438
-
-Full-text Length Statistics (only where both abstract and full-text are present):
-Min Full-text Length: 28
-Max Full-text Length: 12,3958
-Avg Full-text Length: 7,667.087002840909
-
 #### Data Visualization 📈
 
 For the 12,600 publications retrieved from ASK (i.e., those with at least an abstract), we visualize the number of publications per year and per publisher. The blue line represents publications with abstracts, and the green line represents those with full-text available.
 
+To compute the data, we will need to map on DOI between the ASK orkg data and the original crossref metadata file. The script [**data-plots/scripts/plot-ask-category-counts.py**]([../data-plots/scripts/plot-ask-category-counts.py]) let's you do this. Make sure you have downloaded the [ask_publications_tdm.csv](https://www.doi.org/10.5281/zenodo.13956882) file from Zenodo. Below are shown two example runs.
+
+```bash
+..\invasion-biology-tdm-dataset\data-plots\scripts>python plot-ask-category-counts.py
+Enter the path for the Crossref metadata file: ../../data/all-publications/crossref-metadata/publications_metadata.csv
+Enter the path for the ASK publications file: ask_publications_tdm.csv #you need to specify the path you download this file to
+Enter the output file name (e.g., publication_counts_by_category.csv): ../data/ask_publication_counts_by_publisher.csv
+Enter the column name to count publications by (e.g., Publisher): Published Year
+Output written to ../data/ask_publication_counts_by_publisher.csv
+```
+
+```bash
+..\invasion-biology-tdm-dataset\data-plots\scripts>python plot-ask-category-counts.py
+Enter the path for the Crossref metadata file: ../../data/all-publications/crossref-metadata/publications_metadata.csv
+Enter the path for the ASK publications file: ask_publications_tdm.csv #you need to specify the path you download this file to
+Enter the output file name (e.g., publication_counts_by_category.csv): ../data/ask_publication_counts_by_publisher.csv
+Enter the column name to count publications by (e.g., Publisher): Publisher
+Output written to ../data/ask_publication_counts_by_publisher.csv
+```
+
+
+
 ##### Publications Per Year
-![crossref-publications-per-year](../data-plots/plots/crossref-publications-per-year.png)
-*Data for this plot was generated by [plot-crossref-category-counts.py](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/data-plots/scripts/plot-crossref-category-counts.py), using data from [crossref_publication_counts_by_year.csv](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/data-plots/data/crossref_publication_counts_by_year.csv).*
+![ask-publications-per-year](../data-plots/plots/ask-publications-per-year.png)
+*Data for this plot was generated by [plot-ask-category-counts.py](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data-plots/scripts/plot-ask-category-counts.py), using data from [ask_publication_counts_by_year.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data-plots/data/ask_publication_counts_by_year.csv).*
 
 ##### Publications Per Publisher
-![crossref-publications-per-publisher](../data-plots/plots/crossref-publications-per-publisher.png)
-*Data for this plot was generated by [plot-crossref-category-counts.py](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/data-plots/scripts/plot-crossref-category-counts.py), using data from [crossref_publication_counts_by_publisher.csv](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/data-plots/data/crossref_publication_counts_by_publisher.csv). Note: This plot only includes publishers with at least 200 publications, representing 23 out of a total of 1020 unique publishers.*
+![ask-publications-per-publisher](../data-plots/plots/ask-publications-per-publisher.png)
+*Data for this plot was generated by [plot-ask-category-counts.py](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data-plots/scripts/plot-ask-category-counts.py), using data from [ask_publication_counts_by_publisher.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data-plots/data/ask_publication_counts_by_publisher.csv). Note: This plot only includes publishers with at least 30 publications, representing 25 out of a total of 332 unique publishers.*
+
+
+### Step 3: Compiling a Text Data Mining Corpus using Semantic Scholar
+
+Relevant API endpoints is paper title search [https://api.semanticscholar.org/graph/v1/paper/search/match](https://api.semanticscholar.org/graph/v1/paper/search/match)
