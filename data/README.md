@@ -21,21 +21,22 @@ Obtain the metadata for the publications in the Invasion Biology Corpus using:
 Check and compare publication dates and full-text links on Wikidata: [Wikidata Query](https://w.wiki/Bae3).
 
 
-### Step 2: Compiling a Text Data Mining Corpus using ASK.ORKG.ORG 🛠️📚
+## Step 2: Compiling a Text Data Mining Corpus using ASK.ORKG.ORG 🛠️📚
 
 In this step, we'll use the DOIs metadata file compiled from Crossref to query the ASK.ORKG.ORG API for abstracts and full-text records. Specifically, we will use the [Explore Documents](https://api.ask.orkg.org/docs#tag/Semantic-Neural-Search/operation/explore_documents_index_explore_get) endpoint to retrieve the data.
 
-#### Task: Testing with Example DOIs
+In this step, we will use the Crossref metadata file to query the [ASK ORKG](https://ask.orkg.org/) [API](https://api.ask.orkg.org/docs) for abstracts and full-text records. The [Explore Documents](https://api.ask.orkg.org/docs#tag/Semantic-Neural-Search/operation/explore_documents_index_explore_get) endpoint retrieves this data.
 
-To begin, you can test the ASK API with specific example DOIs by running the script:  
-[scripts/ask-query-doi-fulltext-search.py](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/scripts/ask-query-doi-fulltext-search.py).
+### Task: Testing with Example DOIs 📝
 
-This script prompts you for a known DOI, checks if the DOI is in the ASK database, and if so, returns the availability of abstracts and full-text. Here are a few example runs (date: 19-10-2024):
+Test the ASK API with specific DOIs by running the script [scripts/ask-query-doi-fulltext-search.py](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/scripts/ask-query-doi-fulltext-search.py). The script checks whether the DOI is available in the ASK database, and if so, returns information on abstract and full-text availability.
 
-##### Example 1: No Records Found
+Here are a few example runs (as of 19-10-2024):
+
+#### Example 1: No Records Found ❌
 
 ```bash
-../invasion-biology-ask-dataset/scripts>python ask-doi-fulltext-search.py
+../invasion-biology-tdm-dataset/scripts>python ask-doi-fulltext-search.py
 Please enter the DOI: 10.1007/BF00383770
 Retrieved 0 out of 0 records
 No records found for DOI: 10.1007/BF00383770
@@ -43,10 +44,10 @@ No records found for DOI: 10.1007/BF00383770
 
 The above run shows that the DOI was not found in the ASK database.
 
-##### Example 2: Record Found, No Full-text Available
+#### Example 2: Record Found, No Full-text Available ⚠️
 
 ```bash
-../invasion-biology-ask-dataset/scripts>python ask-doi-fulltext-search.py
+../invasion-biology-tdm-dataset/scripts>python ask-doi-fulltext-search.py
 Please enter the DOI: 10.1002/1878-0261.12019
 Retrieved 2 out of 2 records
 ID: 586962788, DOI: 10.1002/1878-0261.12019, Title: Modes of invasion during tumour dissemination, Year: 2017
@@ -57,12 +58,12 @@ Abstract is available. Token count: 90
 Full-text is not available.
 ```
 
-In this run, the record was found in the ASK database, but the full-text was not available. Note that there were duplicate entries for this DOI.
+In this run, the record was found in the ASK database, but the full-text was not available. Note that there were two duplicate entries for this DOI.
 
-##### Example 3: Record Found, Full-text Available
+#### Example 3: Record Found, Full-text Available ✔️
 
 ```bash
-../invasion-biology-ask-dataset/scripts>python ask-doi-fulltext-search.py
+../invasion-biology-tdm-dataset/scripts>python ask-doi-fulltext-search.py
 Please enter the DOI: 10.1002/2688-8319.12147
 Retrieved 6 out of 6 records
 ID: 521018861, DOI: 10.1002/2688-8319.12147, Title: Bringing back the Manchester Argus Coenonympha tullia ssp. davus (Fabricius, 1777): quantifying the habitat resource requirements to inform the successful reintroduction of a specialist peatland butterfly, Year: 2022
@@ -73,43 +74,47 @@ Full-text is available. Token count: 8305
 
 Here, the record was found in the ASK database, and both the abstract and full-text were available. However, there were six duplicate entries for this DOI.
 
-#### Task: Query ASK for a List of DOIs
+### Task: Query ASK for a List of DOIs 📄🔍
 
-You can query the ASK database for a list of DOIs using the script:  
-[scripts/ask-doi-list-fulltext-search.py](../scripts/ask-doi-list-fulltext-search.py).
+Query the ASK database for a list of DOIs using the script scripts/ask-doi-list-fulltext-search.py](../scripts/ask-doi-list-fulltext-search.py). This script prompts for:
 
-When you run the script, it will prompt you for the following inputs:
+1. **Path to a CSV file** containing DOIs in a column named "DOI" or "doi."
+2. **Paths to output files** for:
+  - Full-text results.
+  - DOIs not found in ASK.
+  - Errors encountered during the query process.
+  - Logging processed DOIs.
 
-1. **The path to a CSV file** containing the list of DOIs. The DOIs should be in a column named either "DOI" or "doi."
-2. **Paths to the output files** where the results will be stored:
-  - One for the full-text results.
-  - One for logging DOIs that were not found in the ASK database.
-  - One for logging any errors encountered during the query process.
-  - One for logging the processed DOIs.
-
-##### Example Run
+#### Example Run ▶️
 
 ```bash
-../invasion-biology-ask-dataset/scripts>python ask-doi-list-fulltext-search.py
+../invasion-biology-tdm-dataset/scripts>python ask-doi-list-fulltext-search.py
 Please enter the path to the input CSV file containing DOIs: ../data/all-publications/crossref-metadata/publications_metadata.csv
-Please enter the path to the output CSV file: ../data/all-publications/ask-fulltext/publications_tdm.csv
+Please enter the path to the output CSV file: ../data/all-publications/ask-fulltext/publications_tdm.csv #this resulting data file is released on zenodo
 Please enter the path to the CSV file to log DOIs not found in ASK: ../data/all-publications/ask-fulltext/publications_notin_ASK.csv
 Please enter the path to the CSV file to log errors: ../data/all-publications/ask-fulltext/publications_ASK_query_error.csv
 Please enter the path to the CSV file to log processed DOIs: ../data/all-publications/ask-fulltext/queried_DOIs.csv
 ```
 
-#### Data Statistics
+#### Data & Stats 📈
 
-The file [10.5281/zenodo.13956882](https://www.doi.org/10.5281/zenodo.13956882) contains the responses returned from ASK. 
+📂 **The TDM dataset obtained from ASK with abstracts and full-text is released on Zenodo at:** [10.5281/zenodo.13956882](https://www.doi.org/10.5281/zenodo.13956882).
 
 Note: the data file is hosted on zenodo due to github repository storage limits.
 
 Out of a total of 49,438 queried DOIs, the statistics for those found in the ASK database are as follows:
 
 - **Total DOIs processed**: 12,636
-  - DOIs with no abstracts and no full-text: 36 (abstract token count was less than 10)
+  - DOIs with no abstracts or full-text: 36 (abstract token count was less than 10)
   - DOIs with abstracts but no full-text: 9,766
   - DOIs with both abstracts and full-text: 2,816
+
+| Statistic                   | Abstract Length (tokens) | Full-text Length (tokens) |
+|------------------------------|--------------------------|---------------------------|
+| **Min Length**               | 10                       | 28                        |
+| **Max Length**               | 1,608                    | 123,958                   |
+| **Average Length**           | 235.47                   | 7,667.09                  |
+
 
 ##### Abstract Length Statistics (for entries with abstract):
 - **Min Abstract Length**: 10 tokens
