@@ -116,22 +116,11 @@ Out of a total of 49,438 queried DOIs, the statistics for those found in the ASK
 | **Average Length**           | 235.47                   | 7,667.09                  |
 
 
-##### Abstract Length Statistics (for entries with abstract):
-- **Min Abstract Length**: 10 tokens
-- **Max Abstract Length**: 1,608 tokens
-- **Average Abstract Length**: 235.47 tokens
+### Data Visualization 🔬📈
 
-##### Full-text Length Statistics (for entries with both abstract and full-text):
-- **Min Full-text Length**: 28 tokens
-- **Max Full-text Length**: 123,958 tokens
-- **Average Full-text Length**: 7,667.09 tokens
+For the 12,600 publications retrieved from ASK (i.e., those with at least an abstract), we visualize the number of publications per year and per publisher. 
 
-
-#### Data Visualization 🔬📈
-
-For the 12,600 publications retrieved from ASK (i.e., those with at least an abstract), we visualize the number of publications per year and per publisher. The blue line represents publications with abstracts, and the green line represents those with full-text available.
-
-To compute the data, we will need to map on DOI between the ASK orkg data and the original crossref metadata file. The script [**data-plots/scripts/plot-ask-category-counts.py**]([../data-plots/scripts/plot-ask-category-counts.py]) let's you do this. Make sure you have downloaded the [ask_publications_tdm.csv](https://www.doi.org/10.5281/zenodo.13956882) file from Zenodo. Below are shown two example runs.
+To generate the data for plotting, map DOIs between ASK and the Crossref metadata file using the script [data-plots/scripts/plot-ask-category-counts.py]([../data-plots/scripts/plot-ask-category-counts.py]). Ensure you've downloaded the TDM Publications ASK output file from zenodo ([10.5281/zenodo.13956882](https://www.doi.org/10.5281/zenodo.13956882)).
 
 ```bash
 ..\invasion-biology-tdm-dataset\data-plots\scripts>python plot-ask-category-counts.py
@@ -154,7 +143,7 @@ Output written to ../data/ask_publication_counts_by_publisher.csv
 The plots below juxtapose views of the original Crossref metadata dataset compiled from the Invasion Biology WikiProject compiled publication DOIs versus those that could be found in the ASK ORKG database w.r.t. their content i.e. abstract or full-text for text data mining (tdm) purposes.
 
 
-##### Publications Per Year
+#### Publications Per Year
 <table>
   <tr>
     <td align="center">
@@ -173,7 +162,7 @@ The plots below juxtapose views of the original Crossref metadata dataset compil
 </table>
 
 
-##### Publications Per Publisher
+#### Publications Per Publisher
 
 <table>
   <tr>
@@ -191,6 +180,8 @@ The plots below juxtapose views of the original Crossref metadata dataset compil
 </table>
 
 
-### Step 3: Compiling a Text Data Mining Corpus using Semantic Scholar
+## Step 3: Compiling a Text Data Mining Corpus using Semantic Scholar
 
-Relevant API endpoints is paper title search [https://api.semanticscholar.org/graph/v1/paper/search/match](https://api.semanticscholar.org/graph/v1/paper/search/match)
+Another potential source to compile a TDM corpus is Semantic Scholar. In this case the relevant API endpoints is paper title search [https://api.semanticscholar.org/graph/v1/paper/search/match](https://api.semanticscholar.org/graph/v1/paper/search/match).
+
+[to be continued...]
