@@ -12,7 +12,7 @@ Obtain the metadata for the publications in the Invasion Biology Corpus using:
 #### Metadata Acquisition Process
 - The script used for fetching additional metadata from Crossref: [publications-crossref-metadata-search.py](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/tree/main/scripts/publications-crossref-metadata-search.py)
 - DOIs were sourced from the original list at [wikidata-invasion-biology-corpus/Publications.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/tree/main/wikidata-invasion-biology-corpus/Publications.csv).
-- The fetched Crossref metadata is stored in: [crossref-metadata/publications_metadata.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data/all-publications/crossref-metadata/publications_metadata.csv)
+- 📂 **The dataset obtained from Crossref is stored in:**[crossref-metadata/publications_metadata.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data/all-publications/crossref-metadata/publications_metadata.csv)
 - A list of 273 publication DOIs that were not registered at Crossref is available at: [crossref-metadata/failed_dois.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data/all-publications/crossref-metadata/failed_dois.csv).
 
 
@@ -122,7 +122,7 @@ Out of a total of 49,438 queried DOIs, the statistics for those found in the ASK
 - **Average Full-text Length**: 7,667.09 tokens
 
 
-#### Data Visualization 📈
+#### Data Visualization 🔬📈
 
 For the 12,600 publications retrieved from ASK (i.e., those with at least an abstract), we visualize the number of publications per year and per publisher. The blue line represents publications with abstracts, and the green line represents those with full-text available.
 
