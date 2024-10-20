@@ -1,23 +1,24 @@
-## Aim 🎯
-The goal is to evaluate the availability of full-text from [ASK ORKG](https://ask.orkg.org/) for the publications in the Invasion Biology Corpus to compile a resulting corpus for text data mining.
+# Aim 🎯
+The goal of this project is to evaluate the availability of full-text from [ASK ORKG](https://ask.orkg.org/) for publications in the [Invasion Biology Corpus](https://zenodo.org/records/12518037), with the aim of compiling a corpus for text data mining (TDM).
 
-### Step 1: Initial Data Analysis 📊
-Perform initial analysis using only the metadata available.
+## Step 1: Initial Data Analysis 📊
+Perform an initial analysis using only the available metadata.
 
-#### Task: Metadata Acquisition
+### Task: Metadata Acquisition
 Obtain the metadata for the publications in the Invasion Biology Corpus using:
-- **Crossref API**: An official registry providing complete metadata for publications. [Crossref API Documentation](https://api.crossref.org/swagger-ui/index.html)
-- **Wikidata**: The publication list was initially compiled here, but for completeness and assuming that Wikidata's knowledge graph isn't fully curated, we prefer Crossref.
+- **Crossref API**: A comprehensive registry providing metadata for publications. See [Crossref API Documentation](https://api.crossref.org/swagger-ui/index.html).
+- **Wikidata**: The initial publication list of DOIs was compiled here, but for completeness, we prefer Crossref due to its more curated and extensive metadata.
 
-##### Metadata Acquisition Process
-- The script used for fetching additional metadata from Crossref: [publications-crossref-metadata-search.py](https://github.com/jd-coderepos/invasion-biology-ask-dataset/tree/main/scripts/publications-crossref-metadata-search.py)
-- DOIs were sourced from the original list at [wikidata-invasion-biology-corpus/Publications.csv](https://github.com/jd-coderepos/invasion-biology-ask-dataset/tree/main/wikidata-invasion-biology-corpus/Publications.csv).
-- The fetched Crossref metadata is stored in: [crossref-metadata/publications_metadata.csv](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/data/all-publications/crossref-metadata/publications_metadata.csv)
-- A list of 273 publication DOIs that were not registered at Crossref is available at: [crossref-metadata/failed_dois.csv](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/data/all-publications/crossref-metadata/failed_dois.csv).
+#### Metadata Acquisition Process
+- The script used for fetching additional metadata from Crossref: [publications-crossref-metadata-search.py](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/tree/main/scripts/publications-crossref-metadata-search.py)
+- DOIs were sourced from the original list at [wikidata-invasion-biology-corpus/Publications.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/tree/main/wikidata-invasion-biology-corpus/Publications.csv).
+- The fetched Crossref metadata is stored in: [crossref-metadata/publications_metadata.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data/all-publications/crossref-metadata/publications_metadata.csv)
+- A list of 273 publication DOIs that were not registered at Crossref is available at: [crossref-metadata/failed_dois.csv](https://github.com/jd-coderepos/invasion-biology-tdm-dataset/blob/main/data/all-publications/crossref-metadata/failed_dois.csv).
 
 
 #### Additional Query 🌐
-Check out the date and full-text links of the paper on Wikidata: [Wikidata Query](https://w.wiki/Bae3)
+
+Check and compare publication dates and full-text links on Wikidata: [Wikidata Query](https://w.wiki/Bae3).
 
 
 ### Step 2: Compiling a Text Data Mining Corpus using ASK.ORKG.ORG 🛠️📚
