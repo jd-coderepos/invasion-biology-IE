@@ -145,7 +145,7 @@ Enter the column name to count publications by (e.g., Publisher): Publisher
 Output written to ../data/ask_publication_counts_by_publisher.csv
 ```
 
-For the publications whose DOIs were successfully registered in Crossref, the plots below show the number of publications per year and per top publisher with over 200 publications.
+The plots below juxtapose views of the original Crossref metadata dataset compiled from the Invasion Biology WikiProject compiled publication DOIs versus those that could be found in the ASK ORKG database w.r.t. their content i.e. abstract or full-text for text data mining (tdm) purposes.
 
 
 ##### Publications Per Year
