@@ -20,7 +20,7 @@ Obtain the metadata for the publications in the Invasion Biology Corpus using:
 Check out the date and full-text links of the paper on Wikidata: [Wikidata Query](https://w.wiki/Bae3)
 
 
-### Step 2: Compiling a Text Data Mining Corpus using ASK.ORKG.ORG
+### Step 2: Compiling a Text Data Mining Corpus using ASK.ORKG.ORG 🛠️📚
 
 In this step, we'll use the DOIs metadata file compiled from Crossref to query the ASK.ORKG.ORG API for abstracts and full-text records. Specifically, we will use the [Explore Documents](https://api.ask.orkg.org/docs#tag/Semantic-Neural-Search/operation/explore_documents_index_explore_get) endpoint to retrieve the data.
 
