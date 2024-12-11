@@ -1,0 +1,70 @@
+-------------
+System prompt
+-------------
+
+You are a research assistant in invasion biology or ecology. Your task is to read and analyze the content of provided papers to extract relevant information from the papers provided by the user.
+
+The field of invasion biology is defined as follows: a research area dealing with the translocation, establishment, spread, impact and management of species outside of their native ranges, where they are called non-native or alien species.
+
+The following entities define the information extraction objective: species, habitat, location, ecosystem.
+
+As the extraction task you need to identify if there are any relations between the entities defined above, and if so extract the information with the relations.
+
+Respond in a valid JSON format.
+
+Note that not all papers that might be provided by the user are addressing a problem in invasion biology. If you are provided a paper input that is not an invasion biology paper, return N/A as your response.
+
+
+------------
+User prompt
+------------
+
+
+Extract the information as instructed from this article title and abstract.
+
+Title: Pollination effectiveness of specialist and opportunistic nectar feeders influenced by invasive alien ants in the Seychelles
+Abstract: This is the author accepted manuscript. The final version is available from the Botanical Society of America via the DOI in this recordPremise: Opportunistic nectar-feeders may act as effective pollinators; nonetheless, we still lack information on whether these opportunistic species differ in their pollination effectiveness from specialized nectarivorous vertebrates and insects. Many nectar specialists have coevolved with the plants on which they feed; therefore, we would expect higher pollination effectiveness in specialists than in opportunistic feeders. Here, we assessed quantity and quality components of pollination effectiveness in specialist and opportunistic vertebrate nectarivores and insects, focusing on three plants from the Seychelles: Thespesia populnea, Polyscias crassa, and Syzygium wrightii. Methods: We determined the quantity component (QNC) of pollination effectiveness with pollinator observations, and the quality component (QLC) by measuring fruit and seed set resulting from single visits by each pollinator. To detect potential negative effects of invasive ants on native plant-pollinator interactions, we classified pollinator visits (quantity component) as disturbed (>6 ants/30 min) vs. undisturbed. Results: All focal plants were visited by insects, and vertebrate specialist and opportunist nectarivores, yet their pollination effectiveness differed. Flying insects were the most effective pollinators of T. populnea. The other two plants were most effectively pollinated by vertebrates; i.e., sunbirds (nectar specialists) in S. wrightii and Phelsuma geckos (nectar opportunists) in P. crassa, despite marked variation in QNC and QLC. Ant presence was associated with lower pollinator visitation rate in P. crassa and S. wrightii. Conclusions: Our study highlights the importance of all pollinator guilds, including opportunist nectarivorous vertebrates as pollinators of island plants, and the vulnerability of such interactions to disruption by nonnative species.Spanish GovernmentGerman Research Foundatio
+
+
+
+--------
+Response
+--------
+
+```json
+{
+  "species": [
+    "Thespesia populnea",
+    "Polyscias crassa",
+    "Syzygium wrightii",
+    "sunbirds",
+    "Phelsuma geckos",
+    "invasive alien ants"
+  ],
+  "habitat": null,
+  "location": "Seychelles",
+  "ecosystem": null,
+  "relations": {
+    "species-location": {
+      "Thespesia populnea": "Seychelles",
+      "Polyscias crassa": "Seychelles",
+      "Syzygium wrightii": "Seychelles",
+      "sunbirds": "Seychelles",
+      "Phelsuma geckos": "Seychelles",
+      "invasive alien ants": "Seychelles"
+    },
+    "species-interaction": {
+      "Thespesia populnea": {
+        "effective_pollinators": "flying insects"
+      },
+      "Syzygium wrightii": {
+        "effective_pollinators": "sunbirds"
+      },
+      "Polyscias crassa": {
+        "effective_pollinators": "Phelsuma geckos"
+      },
+      "invasive alien ants": "disruption of pollination interactions"
+    }
+  }
+}
+```
