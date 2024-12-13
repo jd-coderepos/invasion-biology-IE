@@ -1,0 +1,69 @@
+Enter article title (or type 'exit' to quit): The role of salmonid fishes in conservation of the endangered freshwater pearl mussel (Margaritifera margaritifera)
+Enter article abstract: The abundance of freshwater pearl mussels (Margaritifera margaritifera) has   declined widely during the past century, and new conservation initiatives are   needed. This thesis focused on the relationship between M. margaritifera and its   salmonid host required for reproduction of this species. First, by exposing fish   experimentally to glochidium larvae of M. margaritifera, different M. margaritifera   populations were shown to demonstrate strong differences in their ability to   parasitize different salmonid species. Atlantic salmon was clearly a better host for   mussels in large river channels, whereas in small headwater tributaries brown   trout was the best, or the only suitable, host. These findings provide a previously   unrecognised explanation for the collapse and the lack of recruitment especially of   the salmon-specific M. margaritifera populations; a high proportion of large   salmon rivers were dammed for hydropower production in the 1960s, which   prevented the migration of salmon and thus left M. margaritifera without the   appropriate host in these rivers. Furthermore, an invasive salmonid, brook trout,   was widely introduced to small tributaries above the dams in the past, but in this   study was shown to be an unsuitable host for M. margaritifera. Thus, and due to   the tendency of brook trout to replace native brown trout, the spread of brook   trout is an additional threat to M. margaritifera. An indication of local adaptation of   M. margaritifera, i.e. higher infectivity in sympatric salmonid host strain than in   allopatric populations of the same species, was also detected. Finally, a new, non-  destructive approach to search for M. margaritifera populations, involving   electrofishing and quick visual examination of the gills of captured salmonids,   revealed the occurrence of 3 previously unknown populations. The results of this   thesis highlight the importance of taking into account the roles of salmonid fish in   future efforts to search, protect and restore freshwater pearl mussel populations
+
+Extracted Information:
+ ```json
+{
+    "Species": [
+        "freshwater pearl mussel (Margaritifera margaritifera)",
+        "Atlantic salmon",
+        "brown trout",
+        "brook trout",
+        "salmonid fishes"
+    ],
+    "Location": [
+        "large river channels",
+        "small headwater tributaries"
+    ],
+    "Ecosystem": [
+        "freshwater ecosystems"
+    ],
+    "Habitat": [
+        "river channels",
+        "headwater tributaries",
+        "gills of captured salmonids"
+    ],
+    "Relationships": [
+        {
+            "Related Entities": [
+                "freshwater pearl mussel (Margaritifera margaritifera)",
+                "Atlantic salmon"
+            ],
+            "Relationship Name": "host-parasite",
+            "Context": "Atlantic salmon was clearly a better host for mussels in large river channels"
+        },
+        {
+            "Related Entities": [
+                "freshwater pearl mussel (Margaritifera margaritifera)",
+                "brown trout"
+            ],
+            "Relationship Name": "host-parasite",
+            "Context": "whereas in small headwater tributaries brown trout was the best, or the only suitable, host."
+        },
+        {
+            "Related Entities": [
+                "large salmon rivers",
+                "hydropower production"
+            ],
+            "Relationship Name": "anthropogenic impact",
+            "Context": "a high proportion of large salmon rivers were dammed for hydropower production in the 1960s"
+        },
+        {
+            "Related Entities": [
+                "brook trout",
+                "Margaritifera margaritifera"
+            ],
+            "Relationship Name": "unsuitable host",
+            "Context": "an invasive salmonid, brook trout, was widely introduced to small tributaries above the dams in the past, but in this study was shown to be an unsuitable host for M. margaritifera."
+        },
+        {
+            "Related Entities": [
+                "brook trout",
+                "brown trout"
+            ],
+            "Relationship Name": "competitive replacement",
+            "Context": "the tendency of brook trout to replace native brown trout"
+        }
+    ]
+}
+```

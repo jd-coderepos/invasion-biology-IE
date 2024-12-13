@@ -1,0 +1,54 @@
+```json
+{
+  "species": [
+    {
+      "name": "species_name",
+      "properties": {
+        "type": "specific/broad",
+        "distribution_status": "native/non-native"
+      }
+    }
+  ],
+  "location": [
+    {
+      "name": "location_name",
+      "properties": {
+        "type": "natural/administrative",
+        "coordinates": {
+          "latitude": "latitude_value",
+          "longitude": "longitude_value"
+        }
+      }
+    }
+  ],
+  "ecosystem": [
+    {
+      "name": "ecosystem_name",
+      "properties": {
+        "bounded_by": ["list_of_locations"],
+        "type": "aquatic/terrestrial"
+      }
+    }
+  ],
+  "habitat": [
+    {
+      "name": "habitat_name",
+      "properties": {
+        "type": "aquatic/terrestrial",
+        "subcomponent_of": "ecosystem_name"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "related_entities": ["entity1", "entity2", "..."],
+      "relationship_properties": {
+        "name": "relationship_name",
+        "type": "biotic/abiotic",
+        "directionality": "unidirectional/bidirectional",
+        "context": "relationship_contextual_description"
+      }
+    }
+  ]
+}
+```

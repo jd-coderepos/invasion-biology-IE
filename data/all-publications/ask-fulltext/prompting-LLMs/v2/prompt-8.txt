@@ -1,0 +1,40 @@
+Enter article title (or type 'exit' to quit): Exotic species, fisheries and conservation of freshwater biodiversity in tropical Asia: The case of the Sepik River, Papua New Guinea
+Enter article abstract: 1. Development of effective conservation strategies for freshwater biodiversity must take account of the trade-off between species preservation and human use of ecosystem goods and services. The latter cannot be prevented, and attempts to manage ecosystems that focus solely on maximizing biodiversity will fail. 2. A compromise position of management for ecosystem functioning and human livelihoods - rather than preservation of every species - will provide a better basis for biodiversity conservation. This has implications for the management of exotic species. 3. There are some situations, in lentic habitats in Sri Lanka, for example, where the establishment of exotics has increased fishery yields without apparent detriment to native biodiversity. The Sepik River in Papua New Guinea provides another illustration of potential compromises between human livelihoods and biodiversity conservation. 4. The Sepik supports a relatively unproductive fishery. Two fish stocking projects (in 1987-93 and 1993-97), representing a partnership between the Papua New Guinea Government and the United Nations (UNDP/FAO), led to the introduction of a suite of exotic fish into the Sepik. Species were selected on the basis of their potential to occupy niches not filled by native fish. Unfortunately, the outcomes of these introductions are poorly documented, although there is preliminary evidence both of increased human use of exotic fish as well as declines of some native species associated with the spread of exotics. 5. Better understanding of the results of the Sepik fish introductions is important, because the pressures of burgeoning human populations in most of tropical Asia make it impossible to preserve near-pristine environments such as the Sepik. While attempts to conserve natural or near-natural systems must remain a priority, there is a need to develop strategies for the management of damaged or degraded ecosystems, which may contain exotics, with the aim of maintaining ecosystem functioning and, if possible, maximizing the persistence of native biodiversity. Copyright Â© 2006 John Wiley & Sons, Ltd.link_to_subscribed_fulltex
+
+Extracted Information:
+ ```json
+{
+    "Species": [
+        "exotic fish",
+        "native fish",
+        "exotic species"
+    ],
+    "Location": [
+        "Sepik River, Papua New Guinea",
+        "Sri Lanka"
+    ],
+    "Ecosystem": [
+        "freshwater ecosystems"
+    ],
+    "Habitat": [
+        "lentic habitats"
+    ],
+    "Relationships": [
+        {
+            "related_entities": ["exotic fish", "Sepik River, Papua New Guinea"],
+            "relationship_name": "introduced_species_location",
+            "context": "Two fish stocking projects (in 1987-93 and 1993-97) ... led to the introduction of a suite of exotic fish into the Sepik."
+        },
+        {
+            "related_entities": ["exotic species", "native fish"],
+            "relationship_name": "species_interaction",
+            "context": "there is preliminary evidence both of increased human use of exotic fish as well as declines of some native species associated with the spread of exotics."
+        },
+        {
+            "related_entities": ["exotic species", "Sri Lanka", "lentic habitats"],
+            "relationship_name": "exotic_species_habitat_location",
+            "context": "There are some situations, in lentic habitats in Sri Lanka, for example, where the establishment of exotics has increased fishery yields without apparent detriment to native biodiversity."
+        }
+    ]
+}
+```

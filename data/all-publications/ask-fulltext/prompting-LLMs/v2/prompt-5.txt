@@ -1,0 +1,59 @@
+Enter article title (or type 'exit' to quit): Ecosystem vulnerability to alien and invasive species: a case study on marine habitats along the Italian coast
+Enter article abstract: Spread of alien species (AS) is a serious threat to marine habitats and analysis of principal descriptors of their occurrence is pivotal to set reliable conservation strategies. In order to assess the susceptibility of marine habitats to biological invasions, a dataset was gathered of the occurrence of 3899 species from 29 phyla, taken from 93 marine sites located along the Italian coast in the period 2000-2012. In total, 61 AS belonging to 11 phyla have been recorded. Invertebrates were the most represented (63%). Alien species were found in all the habitats examined (EUNIS, level 2), although they showed highest abundance in benthic habitats. Most of the AS were associated with a single EUNIS habitat, while some of them were present in more than one habitat. Trans-habitat occurrence suggests the potential invasiveness of AS. According to statistical analysis, AS recorded could have been more numerous, since some of the marine habitats seemed to be still unsaturated. The model that best describes the spread of AS takes account of both native species richness (Rn) and EUNIS habitat type as explanatory variables. The number of observed AS was directly related to Rn and it was highest in rocky circalittoral and infralittoral habitats. The results of this macro-ecological study focus on the importance of performing large-scale studies, since adopting ecosystem approaches to marine invasion management seems especially fruitful. The results, moreover, highlight the importance of AS monitoring of different habitats, from those subjected to anthropogenic pressure, historically considered to be hubs of introduction of AS, to the most biologically rich and diverse marine habitats. Indeed, it is necessary to set monitoring strategies to detect the introduction, the distribution and persistence of AS over time. These recommendations are especially significant in the light of the strategic plans currently under formulation in Mediterranean countries with regard to AS monitoring. Â© 2016 John Wiley & Sons, Ltd
+
+Extracted Information:
+ ```json
+{
+    "Species": [
+        "alien species",
+        "invertebrates"
+    ],
+    "Location": [
+        "Italian coast",
+        "Mediterranean countries"
+    ],
+    "Ecosystem": [
+        "marine ecosystems"
+    ],
+    "Habitat": [
+        "marine habitats",
+        "benthic habitats",
+        "rocky circalittoral habitats",
+        "infralittoral habitats"
+    ],
+    "Relationships": [
+        {
+            "Related Entities": [
+                "alien species",
+                "marine habitats"
+            ],
+            "Relationship": "threat to",
+            "Context": "Spread of alien species (AS) is a serious threat to marine habitats"
+        },
+        {
+            "Related Entities": [
+                "alien species",
+                "benthic habitats"
+            ],
+            "Relationship": "abundance in",
+            "Context": "Alien species were found in all the habitats examined ... although they showed highest abundance in benthic habitats"
+        },
+        {
+            "Related Entities": [
+                "alien species",
+                "rocky circalittoral habitats"
+            ],
+            "Relationship": "high occurrence in",
+            "Context": "The number of observed AS was directly related to Rn and it was highest in rocky circalittoral"
+        },
+        {
+            "Related Entities": [
+                "alien species",
+                "infralittoral habitats"
+            ],
+            "Relationship": "high occurrence in",
+            "Context": "The number of observed AS was directly related to Rn and it was highest in ... infralittoral habitats"
+        }
+    ]
+}
+```

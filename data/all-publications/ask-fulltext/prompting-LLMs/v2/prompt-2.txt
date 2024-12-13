@@ -1,0 +1,61 @@
+------------
+User prompt
+------------
+
+
+Extract the information as instructed from this article title and abstract.
+
+Title: Pollination effectiveness of specialist and opportunistic nectar feeders influenced by invasive alien ants in the Seychelles
+Abstract: This is the author accepted manuscript. The final version is available from the Botanical Society of America via the DOI in this recordPremise: Opportunistic nectar-feeders may act as effective pollinators; nonetheless, we still lack information on whether these opportunistic species differ in their pollination effectiveness from specialized nectarivorous vertebrates and insects. Many nectar specialists have coevolved with the plants on which they feed; therefore, we would expect higher pollination effectiveness in specialists than in opportunistic feeders. Here, we assessed quantity and quality components of pollination effectiveness in specialist and opportunistic vertebrate nectarivores and insects, focusing on three plants from the Seychelles: Thespesia populnea, Polyscias crassa, and Syzygium wrightii. Methods: We determined the quantity component (QNC) of pollination effectiveness with pollinator observations, and the quality component (QLC) by measuring fruit and seed set resulting from single visits by each pollinator. To detect potential negative effects of invasive ants on native plant-pollinator interactions, we classified pollinator visits (quantity component) as disturbed (>6 ants/30 min) vs. undisturbed. Results: All focal plants were visited by insects, and vertebrate specialist and opportunist nectarivores, yet their pollination effectiveness differed. Flying insects were the most effective pollinators of T. populnea. The other two plants were most effectively pollinated by vertebrates; i.e., sunbirds (nectar specialists) in S. wrightii and Phelsuma geckos (nectar opportunists) in P. crassa, despite marked variation in QNC and QLC. Ant presence was associated with lower pollinator visitation rate in P. crassa and S. wrightii. Conclusions: Our study highlights the importance of all pollinator guilds, including opportunist nectarivorous vertebrates as pollinators of island plants, and the vulnerability of such interactions to disruption by nonnative species.Spanish GovernmentGerman Research Foundatio
+
+
+
+--------
+Response
+--------
+
+ ```json
+{
+  "Species": [
+    "Thespesia populnea",
+    "Polyscias crassa",
+    "Syzygium wrightii",
+    "flying insects",
+    "sunbirds",
+    "Phelsuma geckos",
+    "ants"
+  ],
+  "Location": [
+    "Seychelles"
+  ],
+  "Ecosystem": [],
+  "Habitat": [],
+  "Relationships": [
+    {
+      "Related Entities": ["Thespesia populnea", "flying insects"],
+      "Relationship Name": "Most effective pollinators",
+      "Context": "Flying insects were the most effective pollinators of T. populnea."
+    },
+    {
+      "Related Entities": ["Syzygium wrightii", "sunbirds"],
+      "Relationship Name": "Most effective pollinators",
+      "Context": "The other two plants were most effectively pollinated by vertebrates; i.e., sunbirds (nectar specialists) in S. wrightii..."
+    },
+    {
+      "Related Entities": ["Polyscias crassa", "Phelsuma geckos"],
+      "Relationship Name": "Most effective pollinators",
+      "Context": "Phelsuma geckos (nectar opportunists) in P. crassa..."
+    },
+    {
+      "Related Entities": ["Polyscias crassa", "ants"],
+      "Relationship Name": "Lower pollinator visitation due to disturbance",
+      "Context": "Ant presence was associated with lower pollinator visitation rate in P. crassa..."
+    },
+    {
+      "Related Entities": ["Syzygium wrightii", "ants"],
+      "Relationship Name": "Lower pollinator visitation due to disturbance",
+      "Context": "Ant presence was associated with lower pollinator visitation rate in ... S. wrightii."
+    }
+  ]
+}
+```

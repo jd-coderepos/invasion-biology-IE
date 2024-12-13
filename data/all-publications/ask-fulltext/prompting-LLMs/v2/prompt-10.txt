@@ -1,0 +1,45 @@
+Enter article title (or type 'exit' to quit): Decadal decline in demersal fish biomass coincident with a prolonged drought and the introduction of an exotic starfish
+Enter article abstract: Between 1990 and 2011, Port Phillip Bay in southern Australia experienced 2 major ecological disturbances: a prolonged drought from 1997 to 2010, and the introduction of the invasive starfish, Asterias amurensis. The drought reduced land-based nitrogen inputs by 64%, and the biomass of A. amurensis in the deep centre of the bay peaked at 56% of the resident fish biomass in 2000. The impacts of these disturbances on fish were assessed using a demersal trawl time-series spanning 2 decades (1990 to 2011). The timing and spatial extent of changes to fish biomass were analysed using ANCOVA and change point analysis. During the drought, fish biomass declined by 69% in the deep centre of the bay, by 50% at intermediate depths, and showed no significant change around the shallow fringes. This spatial pattern is consistent with hydrodynamic modelling, which suggests that during the drought a greater proportion of the (lower) nitrogen input was retained near the coastal fringe. Most of the decline in fish biomass was attributed to the cumulative effects of reduced productivity during the 12 yr drought. However, declines in 3 species in the deep region were attributed to competition with A. amurensis. Each of these species exhibited high dietary overlap with A. amurensis and displayed sharp declines in biomass coinciding with the peak abundance of A. amurensis in 2000
+
+Extracted Information:
+ ```json
+{
+    "Species": [
+        "demersal fish",
+        "Asterias amurensis"
+    ],
+    "Location": [
+        "Port Phillip Bay",
+        "southern Australia"
+    ],
+    "Ecosystem": [],
+    "Habitat": [
+        "deep centre of the bay",
+        "intermediate depths",
+        "shallow fringes",
+        "coastal fringe"
+    ],
+    "Relationships": [
+        {
+            "related_entities": ["Asterias amurensis", "demersal fish"],
+            "relationship_name": "competition",
+            "context": "Declines in 3 species in the deep region were attributed to competition with A. amurensis. Each of these species exhibited high dietary overlap with A. amurensis and displayed sharp declines in biomass coinciding with the peak abundance of A. amurensis in 2000."
+        },
+        {
+            "related_entities": ["drought", "demersal fish"],
+            "relationship_name": "impact on biomass decline",
+            "context": "During the drought, fish biomass declined by 69% in the deep centre of the bay, by 50% at intermediate depths, and showed no significant change around the shallow fringes."
+        },
+        {
+            "related_entities": ["drought", "Port Phillip Bay"],
+            "relationship_name": "ecological disturbance",
+            "context": "Port Phillip Bay in southern Australia experienced 2 major ecological disturbances: a prolonged drought from 1997 to 2010"
+        },
+        {
+            "related_entities": ["Asterias amurensis", "Port Phillip Bay"],
+            "relationship_name": "introduction",
+            "context": "Port Phillip Bay in southern Australia experienced...the introduction of the invasive starfish, Asterias amurensis."
+        }
+    ]
+}
+```
