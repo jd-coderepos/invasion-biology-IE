@@ -1,3 +1,13 @@
+This repository contains the links, data, and scripts to address the following overarching research objective: information extraction of species, locations, habitat, and ecosystems.
+
+Step 1: Create the corpus. 
+
+Starting with the Wikidata Invasion Biology collection released on Zenodo, with the paper metadata, we compiled a corpus for text data mining. This consisted of retrieving the paper abstracts and full text from the ORKG Ask external API service. 
+
+Step 2: Define the Information Extraction (IE) model.
+
+Step 3: 
+
 # Full-text Retrieval for Invasion Biology WikiProject Publications
 
 The [**scripts/invasion-biology-full_text-search.py**](https://github.com/jd-coderepos/invasion-biology-ask-dataset/blob/main/scripts/invasion-biology-full_text-search.py) queries the [ASK ORKG API](https://ask.orkg.org/) to retrieve metadata and full texts (where available) of publications listed in the [Invasion Biology WikiProject](https://www.wikidata.org/wiki/Wikidata:WikiProject_Invasion_biology). Specifically, it uses the [explore document GET request](https://api.ask.orkg.org/docs#tag/Semantic-Neural-Search/operation/explore_documents_index_explore_get), with each publication’s DOI as the document ID, to build a dataset for text data mining.
