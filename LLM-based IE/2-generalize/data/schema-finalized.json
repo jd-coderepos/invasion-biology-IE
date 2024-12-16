@@ -1,0 +1,51 @@
+{
+  "species": [
+    {
+      "name": "species_name",
+      "properties": {
+        "role": "native/introduced/alien/invasive",
+        "taxonomy_level": "species/genus/family"
+      }
+    }
+  ],
+  "location": [
+    {
+      "name": "location_name",
+      "properties": {
+        "category": "natural/administrative",
+        "geopolitical_info": "country/region/city",
+        "additional_details": "climatic/physiographic"
+      }
+    }
+  ],
+  "ecosystem": [
+    {
+      "name": "ecosystem_name",
+      "properties": {
+        "type": "aquatic/terrestrial/marine",
+        "scope": "local/regional/global"
+      }
+    }
+  ],
+  "habitat": [
+    {
+      "name": "habitat_name",
+      "properties": {
+        "type": "aquatic/terrestrial/marine",
+		"subcomponent_of": "ecosystem_name",
+        "specifics": "e.g., benthic, litoral"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "related_entities": ["entity1", "entity2", "..."],
+      "relationship_properties": {
+        "name": "relationship_name",
+        "type": "biological/physical/ecological/anthropogenic",
+        "directionality": "unidirectional/bidirectional",
+        "context": "relationship_contextual_description"
+      }
+    }
+  ]
+}
