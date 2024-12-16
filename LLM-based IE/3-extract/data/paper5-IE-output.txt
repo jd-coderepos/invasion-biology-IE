@@ -1,0 +1,143 @@
+Choose the input type:
+1. Title and Abstract
+2. Full Text
+Type 'exit' to quit the program.
+Enter your choice (1, 2, or 'exit'): 1
+Enter the paper title: The role of salmonid fishes in conservation of the endangered freshwater pearl mussel (Margaritifera margaritifera)
+Enter the paper abstract: The abundance of freshwater pearl mussels (Margaritifera margaritifera) has   declined widely during the past century, and new conservation initiatives are   needed. This thesis focused on the relationship between M. margaritifera and its   salmonid host required for reproduction of this species. First, by exposing fish   experimentally to glochidium larvae of M. margaritifera, different M. margaritifera   populations were shown to demonstrate strong differences in their ability to   parasitize different salmonid species. Atlantic salmon was clearly a better host for   mussels in large river channels, whereas in small headwater tributaries brown   trout was the best, or the only suitable, host. These findings provide a previously   unrecognised explanation for the collapse and the lack of recruitment especially of   the salmon-specific M. margaritifera populations; a high proportion of large   salmon rivers were dammed for hydropower production in the 1960s, which   prevented the migration of salmon and thus left M. margaritifera without the   appropriate host in these rivers. Furthermore, an invasive salmonid, brook trout,   was widely introduced to small tributaries above the dams in the past, but in this   study was shown to be an unsuitable host for M. margaritifera. Thus, and due to   the tendency of brook trout to replace native brown trout, the spread of brook   trout is an additional threat to M. margaritifera. An indication of local adaptation of   M. margaritifera, i.e. higher infectivity in sympatric salmonid host strain than in   allopatric populations of the same species, was also detected. Finally, a new, non-  destructive approach to search for M. margaritifera populations, involving   electrofishing and quick visual examination of the gills of captured salmonids,   revealed the occurrence of 3 previously unknown populations. The results of this   thesis highlight the importance of taking into account the roles of salmonid fish in   future efforts to search, protect and restore freshwater pearl mussel populations
+
+Extracted Data:
+{
+    "species": [
+        {
+            "name": "Margaritifera margaritifera",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Atlantic salmon",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "brown trout",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "brook trout",
+            "properties": {
+                "role": "invasive",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "salmonid species",
+            "properties": {
+                "role": "-",
+                "taxonomy_level": "family"
+            }
+        }
+    ],
+    "location": [
+        {
+            "name": "large river channels",
+            "properties": {
+                "category": "natural",
+                "geopolitical_info": "-",
+                "additional_details": "-"
+            }
+        },
+        {
+            "name": "small headwater tributaries",
+            "properties": {
+                "category": "natural",
+                "geopolitical_info": "-",
+                "additional_details": "-"
+            }
+        }
+    ],
+    "ecosystem": [
+        {
+            "name": "freshwater ecosystem",
+            "properties": {
+                "type": "aquatic",
+                "scope": "regional"
+            }
+        }
+    ],
+    "habitat": [
+        {
+            "name": "river channels",
+            "properties": {
+                "type": "aquatic",
+                "subcomponent_of": "freshwater ecosystem",
+                "specifics": "-"
+            }
+        },
+        {
+            "name": "headwater tributaries",
+            "properties": {
+                "type": "aquatic",
+                "subcomponent_of": "freshwater ecosystem",
+                "specifics": "-"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "related_entities": [
+                "Margaritifera margaritifera",
+                "Atlantic salmon"
+            ],
+            "relationship_properties": {
+                "name": "host-parasite",
+                "type": "biological",
+                "directionality": "unidirectional",
+                "context": "Atlantic salmon as a host for mussel reproduction in large river channels."
+            }
+        },
+        {
+            "related_entities": [
+                "Margaritifera margaritifera",
+                "brown trout"
+            ],
+            "relationship_properties": {
+                "name": "host-parasite",
+                "type": "biological",
+                "directionality": "unidirectional",
+                "context": "Brown trout as a host for mussel reproduction in small headwater tributaries."
+            }
+        },
+        {
+            "related_entities": [
+                "Margaritifera margaritifera",
+                "brook trout"
+            ],
+            "relationship_properties": {
+                "name": "host-parasite",
+                "type": "biological",
+                "directionality": "unidirectional",
+                "context": "Brook trout is an unsuitable host for the mussel."
+            }
+        },
+        {
+            "related_entities": [
+                "Margaritifera margaritifera",
+                "salmonid species"
+            ],
+            "relationship_properties": {
+                "name": "adaptation/host specificity",
+                "type": "biological",
+                "directionality": "unidirectional",
+                "context": "Higher infectivity of mussel in sympatric salmonid host strain."
+            }
+        }
+    ]
+}

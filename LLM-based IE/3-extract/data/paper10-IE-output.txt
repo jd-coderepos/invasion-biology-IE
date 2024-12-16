@@ -1,0 +1,11 @@
+Choose the input type:
+1. Title and Abstract
+2. Full Text
+Type 'exit' to quit the program.
+Enter your choice (1, 2, or 'exit'): 1
+Enter the paper title: Modes of invasion during tumour dissemination
+Enter the paper abstract: Cancer cell migration and invasion underlie metastatic dissemination, one of the major problems in cancer. Tumour cells exhibit a striking variety of invasion strategies. Importantly, cancer cells can switch between invasion modes in order to cope with challenging environments. This ability to switch migratory modes or plasticity highlights the challenges behind antimetastasis therapy design. In this Review, we present current knowledge on different tumour invasion strategies, the determinants controlling plasticity and arising therapeutic opportunities. We propose that targeting master regulators controlling plasticity is needed to hinder tumour dissemination and metastasis.</p
+
+The paper is not relevant to invasion biology.
+Model response:
+"N/A"

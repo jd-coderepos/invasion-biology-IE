@@ -1,0 +1,88 @@
+Choose the input type:
+1. Title and Abstract
+2. Full Text
+Type 'exit' to quit the program.
+Enter your choice (1, 2, or 'exit'): 1
+Enter the paper title: Pollination effectiveness of specialist and opportunistic nectar feeders influenced by invasive alien ants in the Seychelles
+Enter the paper abstract: This is the author accepted manuscript. The final version is available from the Botanical Society of America via the DOI in this recordPremise: Opportunistic nectar-feeders may act as effective pollinators; nonetheless, we still lack information on whether these opportunistic species differ in their pollination effectiveness from specialized nectarivorous vertebrates and insects. Many nectar specialists have coevolved with the plants on which they feed; therefore, we would expect higher pollination effectiveness in specialists than in opportunistic feeders. Here, we assessed quantity and quality components of pollination effectiveness in specialist and opportunistic vertebrate nectarivores and insects, focusing on three plants from the Seychelles: Thespesia populnea, Polyscias crassa, and Syzygium wrightii. Methods: We determined the quantity component (QNC) of pollination effectiveness with pollinator observations, and the quality component (QLC) by measuring fruit and seed set resulting from single visits by each pollinator. To detect potential negative effects of invasive ants on native plant-pollinator interactions, we classified pollinator visits (quantity component) as disturbed (>6 ants/30 min) vs. undisturbed. Results: All focal plants were visited by insects, and vertebrate specialist and opportunist nectarivores, yet their pollination effectiveness differed. Flying insects were the most effective pollinators of T. populnea. The other two plants were most effectively pollinated by vertebrates; i.e., sunbirds (nectar specialists) in S. wrightii and Phelsuma geckos (nectar opportunists) in P. crassa, despite marked variation in QNC and QLC. Ant presence was associated with lower pollinator visitation rate in P. crassa and S. wrightii. Conclusions: Our study highlights the importance of all pollinator guilds, including opportunist nectarivorous vertebrates as pollinators of island plants, and the vulnerability of such interactions to disruption by nonnative species.Spanish GovernmentGerman Research Foundatio
+
+Extracted Data:
+{
+    "species": [
+        {
+            "name": "invasive alien ants",
+            "properties": {
+                "role": "invasive",
+                "taxonomy_level": "-"
+            }
+        },
+        {
+            "name": "Thespesia populnea",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Polyscias crassa",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Syzygium wrightii",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "sunbirds",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Phelsuma geckos",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "flying insects",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        }
+    ],
+    "location": [
+        {
+            "name": "Seychelles",
+            "properties": {
+                "category": "administrative",
+                "geopolitical_info": "country",
+                "additional_details": "-"
+            }
+        }
+    ],
+    "ecosystem": [],
+    "habitat": [],
+    "relationships": [
+        {
+            "related_entities": [
+                "invasive alien ants",
+                "native plant-pollinator interactions"
+            ],
+            "relationship_properties": {
+                "name": "disruption of interactions",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "Ant presence lowers pollinator visitation rate"
+            }
+        }
+    ]
+}

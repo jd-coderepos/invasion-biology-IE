@@ -1,0 +1,129 @@
+Choose the input type:
+1. Title and Abstract
+2. Full Text
+Type 'exit' to quit the program.
+Enter your choice (1, 2, or 'exit'): 1
+Enter the paper title: Effects of habitat-modifying invasive macroalgae on epiphytic algal communities
+Enter the paper abstract: Although invasive species can negatively impact communities via processes such as resource competition, they may also add new resources that facilitate the distribution and/or abundance of other organisms. In rocky intertidal systems, many benthic macroalgae compete for primary substrate, while providing secondary substrata to which sessile organisms can attach. Using field surveys and laboratory experiments, we investigated algal host-epiphyte dynamics in a New England rocky intertidal system. First, we compared the composition, abundance, richness, and diversity of epiphytes on 2 invasive macroalgal species, Codium fragile ssp. tomentosoides and Grateloupia turuturu, to 2 native macroalgal species, Chondrus crispus and Fucus vesiculosus. We found significant differences among epiphyte communities, as all macroalgal hosts supported different assemblages of species. While epiphyte richness and diversity were generally low on F. vesiculosus and G. turuturu year-round, they were low on C. crispus during the winter only. In contrast, epiphyte richness and diversity on C. fragile remained high throughout the year, suggesting that C. fragile plays an important role for supporting epiphytes during the cooler months. Second, we examined the relationship between epiphytes and a common herbivorous snail, Lacuna vincta. The abundance of juvenile L. vincta was positively correlated with 1 of the 2 most common epiphyte species, Neosiphonia harveyi. However, L. vincta showed a significant consumption preference for the other abundant epiphyte, Ceramium virgatum, in laboratory assays. Our results suggest that epiphyte facilitation by these invasive algal hosts is not only seasonally important for maintaining species richness and diversity, but may also provide both food and habitat for higher trophic levels. Â© Inter-Research 2010
+
+Extracted Data:
+{
+    "species": [
+        {
+            "name": "Codium fragile ssp. tomentosoides",
+            "properties": {
+                "role": "invasive",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Grateloupia turuturu",
+            "properties": {
+                "role": "invasive",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Chondrus crispus",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Fucus vesiculosus",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Lacuna vincta",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Neosiphonia harveyi",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Ceramium virgatum",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        }
+    ],
+    "location": [
+        {
+            "name": "New England",
+            "properties": {
+                "category": "natural",
+                "geopolitical_info": "region",
+                "additional_details": "-"
+            }
+        }
+    ],
+    "ecosystem": [
+        {
+            "name": "rocky intertidal system",
+            "properties": {
+                "type": "marine",
+                "scope": "local"
+            }
+        }
+    ],
+    "habitat": [
+        {
+            "name": "benthic",
+            "properties": {
+                "type": "marine",
+                "subcomponent_of": "rocky intertidal system",
+                "specifics": "benthic"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "related_entities": [
+                "Codium fragile ssp. tomentosoides",
+                "epiphytic algal communities"
+            ],
+            "relationship_properties": {
+                "name": "facilitation of epiphytes",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "Codium fragile supports epiphyte richness and diversity during cooler months"
+            }
+        },
+        {
+            "related_entities": [
+                "Lacuna vincta",
+                "Neosiphonia harveyi"
+            ],
+            "relationship_properties": {
+                "name": "positive correlation",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "Abundance of Lacuna vincta is positively correlated with Neosiphonia harveyi"
+            }
+        },
+        {
+            "related_entities": [
+                "Lacuna vincta",
+                "Ceramium virgatum"
+            ],
+            "relationship_properties": {
+                "name": "consumption preference",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "Lacuna vincta prefers to consume Ceramium virgatum"
+            }
+        }
+    ]
+}

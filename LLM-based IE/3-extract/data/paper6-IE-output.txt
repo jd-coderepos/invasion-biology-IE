@@ -1,0 +1,89 @@
+Choose the input type:
+1. Title and Abstract
+2. Full Text
+Type 'exit' to quit the program.
+Enter your choice (1, 2, or 'exit'): 1
+Enter the paper title: Population-level compensation impedes biological control of an invasive forb and indirect release of a native grass
+Enter the paper abstract: The intentional introduction of specialist insect herbivores for biological control of exotic weeds provides ideal but understudied systems for evaluating important ecological concepts related to top-down control, plant compensatory responses, indirect effects, and the influence of environmental context on these processes. Centaurea stoebe (spotted knapweed) is a notorious rangeland weed that exhibited regional declines in the early 2000s, attributed to drought by some and to successful biocontrol by others. We initiated an experiment to quantify the effects of the biocontrol agent, Cyphocleonus achates, on Ce. stoebe and its interaction with a dominant native grass competitor, Pseudoroegneria spicata, under contrasting precipitation conditions. Plots containing monocultures of each plant species or equal mixtures of the two received factorial combinations of Cy. achates herbivory (exclusion or addition) and precipitation (Mayâ€"June drought or â€œnormal,â€ defined by the 50-year average) for three years. Cy. achates herbivory reduced survival of adult Ce. stoebe plants by 9% overall, but this effect was stronger under normal precipitation compared to drought conditions, and stronger in mixed-species plots compared to monocultures. Herbivory had no effect on Ce. stoebe per capita seed production or on recruitment of seedlings or juveniles. In normal-precipitation plots of mixed composition, greater adult mortality due to Cy. achates herbivory resulted in increased recruitment of new adult Ce. stoebe. Due to this compensatory response to adult mortality, final Ce. stoebe densities did not differ between herbivory treatments regardless of context. Experimental drought reduced adult Ce. stoebe survival in mixed-species plots but did not impede recruitment of new adults or reduce final Ce. stoebe densities, perhaps due to the limited duration of the treatment. Ce. stoebe strongly depressed P. spicata reproduction and recruitment, but these impacts were not substantively alleviated by herbivory on Ce. stoebe. Population-level compensation by dominant plants may be an important factor inhibiting top-down effects in herbivore-driven and predator-driven cascades
+
+Extracted Data:
+{
+    "species": [
+        {
+            "name": "Centaurea stoebe",
+            "properties": {
+                "role": "invasive",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Cyphocleonus achates",
+            "properties": {
+                "role": "introduced",
+                "taxonomy_level": "species"
+            }
+        },
+        {
+            "name": "Pseudoroegneria spicata",
+            "properties": {
+                "role": "native",
+                "taxonomy_level": "species"
+            }
+        }
+    ],
+    "location": [
+        {
+            "name": "-",
+            "properties": {
+                "category": "-",
+                "geopolitical_info": "-",
+                "additional_details": "-"
+            }
+        }
+    ],
+    "ecosystem": [
+        {
+            "name": "rangeland",
+            "properties": {
+                "type": "terrestrial",
+                "scope": "regional"
+            }
+        }
+    ],
+    "habitat": [
+        {
+            "name": "-",
+            "properties": {
+                "type": "-",
+                "subcomponent_of": "-",
+                "specifics": "-"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "related_entities": [
+                "Cyphocleonus achates",
+                "Centaurea stoebe"
+            ],
+            "relationship_properties": {
+                "name": "herbivory",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "Cyphocleonus achates affects Centaurea stoebe by reducing its adult survival."
+            }
+        },
+        {
+            "related_entities": [
+                "Centaurea stoebe",
+                "Pseudoroegneria spicata"
+            ],
+            "relationship_properties": {
+                "name": "competition",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "Centaurea stoebe strongly depresses Pseudoroegneria spicata reproduction and recruitment."
+            }
+        }
+    ]
+}

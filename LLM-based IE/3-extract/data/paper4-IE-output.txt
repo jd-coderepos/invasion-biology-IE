@@ -1,0 +1,110 @@
+Choose the input type:
+1. Title and Abstract
+2. Full Text
+Type 'exit' to quit the program.
+Enter your choice (1, 2, or 'exit'): 1
+Enter the paper title: Ecosystem vulnerability to alien and invasive species: a case study on marine habitats along the Italian coast
+Enter the paper abstract: Spread of alien species (AS) is a serious threat to marine habitats and analysis of principal descriptors of their occurrence is pivotal to set reliable conservation strategies. In order to assess the susceptibility of marine habitats to biological invasions, a dataset was gathered of the occurrence of 3899 species from 29 phyla, taken from 93 marine sites located along the Italian coast in the period 2000-2012. In total, 61 AS belonging to 11 phyla have been recorded. Invertebrates were the most represented (63%). Alien species were found in all the habitats examined (EUNIS, level 2), although they showed highest abundance in benthic habitats. Most of the AS were associated with a single EUNIS habitat, while some of them were present in more than one habitat. Trans-habitat occurrence suggests the potential invasiveness of AS. According to statistical analysis, AS recorded could have been more numerous, since some of the marine habitats seemed to be still unsaturated. The model that best describes the spread of AS takes account of both native species richness (Rn) and EUNIS habitat type as explanatory variables. The number of observed AS was directly related to Rn and it was highest in rocky circalittoral and infralittoral habitats. The results of this macro-ecological study focus on the importance of performing large-scale studies, since adopting ecosystem approaches to marine invasion management seems especially fruitful. The results, moreover, highlight the importance of AS monitoring of different habitats, from those subjected to anthropogenic pressure, historically considered to be hubs of introduction of AS, to the most biologically rich and diverse marine habitats. Indeed, it is necessary to set monitoring strategies to detect the introduction, the distribution and persistence of AS over time. These recommendations are especially significant in the light of the strategic plans currently under formulation in Mediterranean countries with regard to AS monitoring. Â© 2016 John Wiley & Sons, Ltd
+
+Extracted Data:
+{
+    "species": [
+        {
+            "name": "alien species",
+            "properties": {
+                "role": "alien/invasive",
+                "taxonomy_level": "-"
+            }
+        },
+        {
+            "name": "invertebrates",
+            "properties": {
+                "role": "alien",
+                "taxonomy_level": "family"
+            }
+        }
+    ],
+    "location": [
+        {
+            "name": "Italian coast",
+            "properties": {
+                "category": "natural",
+                "geopolitical_info": "country",
+                "additional_details": "-"
+            }
+        }
+    ],
+    "ecosystem": [
+        {
+            "name": "marine ecosystem",
+            "properties": {
+                "type": "marine",
+                "scope": "regional"
+            }
+        }
+    ],
+    "habitat": [
+        {
+            "name": "benthic habitats",
+            "properties": {
+                "type": "marine",
+                "subcomponent_of": "marine ecosystem",
+                "specifics": "benthic"
+            }
+        },
+        {
+            "name": "rocky circalittoral habitats",
+            "properties": {
+                "type": "marine",
+                "subcomponent_of": "marine ecosystem",
+                "specifics": "circalittoral"
+            }
+        },
+        {
+            "name": "infralittoral habitats",
+            "properties": {
+                "type": "marine",
+                "subcomponent_of": "marine ecosystem",
+                "specifics": "infralittoral"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "related_entities": [
+                "alien species",
+                "marine habitats"
+            ],
+            "relationship_properties": {
+                "name": "spread",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "AS spread as a threat to marine habitats"
+            }
+        },
+        {
+            "related_entities": [
+                "alien species",
+                "invertebrates"
+            ],
+            "relationship_properties": {
+                "name": "representation",
+                "type": "biological",
+                "directionality": "unidirectional",
+                "context": "invertebrates are most represented among AS"
+            }
+        },
+        {
+            "related_entities": [
+                "alien species",
+                "EUNIS habitat type"
+            ],
+            "relationship_properties": {
+                "name": "abundance",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "highest abundance of AS in specific habitat types"
+            }
+        }
+    ]
+}

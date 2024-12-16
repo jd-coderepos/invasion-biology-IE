@@ -1,0 +1,63 @@
+Choose the input type:
+1. Title and Abstract
+2. Full Text
+Type 'exit' to quit the program.
+Enter your choice (1, 2, or 'exit'): 1
+Enter the paper title: Seed source regions drive fitness differences in invasive macrophytes
+Enter the paper abstract: International audiencePremise Worldwide, ecosystems are threatened by global changes, including biological invasions. Invasive species arriving in novel environments experience new climatic conditions that can affect their successful establishment. Determining the response of functional traits and fitness components of invasive populations from contrasting environments can provide a useful framework to assess species responses to climate change and the variability of these responses among source populations. Much research on macrophytes has focused on establishment from clonal fragments; however, colonization from sexual propagules has rarely been studied. Our objective was to compare trait responses of plants generated from sexual propagules sourced from three climatic regions but grown under common environmental conditions, using L. peploides subsp. montevidensis as a model taxon. Methods We grew seedlings to reproductive stage in experimental mesocosms under a mediterranean California (MCA) climate from seeds collected in oceanic France (OFR), mediterranean France (MFR), and MCA. Results Seed source region was a major factor influencing differences among invasive plants recruiting from sexual propagules of L. peploides subsp. montevidensis. Trait responses of young individual recruits from MCA and OFR, sourced from geographically distant and climatically distinct source regions, were the most different. The MCA individuals accumulated more biomass, flowered earlier, and had higher leaf N concentrations than the OFR plants. Those from MFR had intermediate profiles. Conclusions By showing that the closer a seedling is from its parental climate, the better it performs, this study provides new insights to the understanding of colonization of invasive plant species and informs its management under novel and changing environmental conditions.
+
+Extracted Data:
+{
+    "species": [
+        {
+            "name": "Ludwigia peploides subsp. montevidensis",
+            "properties": {
+                "role": "invasive",
+                "taxonomy_level": "species"
+            }
+        }
+    ],
+    "location": [
+        {
+            "name": "California",
+            "properties": {
+                "category": "administrative",
+                "geopolitical_info": "region",
+                "additional_details": "mediterranean climate"
+            }
+        },
+        {
+            "name": "France",
+            "properties": {
+                "category": "administrative",
+                "geopolitical_info": "country",
+                "additional_details": "oceanic and mediterranean"
+            }
+        }
+    ],
+    "ecosystem": [
+        {
+            "name": "Mediterranean California Climate",
+            "properties": {
+                "type": "terrestrial",
+                "scope": "regional"
+            }
+        }
+    ],
+    "habitat": [],
+    "relationships": [
+        {
+            "related_entities": [
+                "Ludwigia peploides subsp. montevidensis",
+                "California",
+                "France"
+            ],
+            "relationship_properties": {
+                "name": "seed source influence on fitness",
+                "type": "ecological",
+                "directionality": "unidirectional",
+                "context": "Seed source regions significantly impact fitness traits of invasive L. peploides subsp. montevidensis individuals when grown in common garden conditions."
+            }
+        }
+    ]
+}
