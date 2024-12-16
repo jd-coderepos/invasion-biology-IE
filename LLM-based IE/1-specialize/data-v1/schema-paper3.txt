@@ -1,19 +1,45 @@
-------------
-User prompt
-------------
+Enter article title (or type 'exit' to quit): Differential leaf-litter processing by native (Gammarus pulex) and invasive (Dikerogammarus villosus) freshwater crustaceans under environmental extremes
+Enter article abstract: There is increasing interest in understanding the implications of biological invasions within the context of ecosystem functioning. Nonâ€native crustaceans are of particular interest within fresh waters because of their important contributions to leafâ€litter processing. The alien amphipod Dikerogammarus villosus is spreading rapidly through Europe where it has displaced native gammarids including Gammarus pulex. The resultant change in shredder communities has considerable implications for the dynamics of resource availability within invaded systems.The invasive success of D. villosus has been attributed to many characteristics, including its ability to tolerate a wide range of environmental conditions and to exploit a wide feeding niche. These characteristics are thought to give D. villosus an advantage over native species, especially in habitats subject to changing environmental conditions.The leaf (Salix alba) shredding efficiency, defined as the leaf mass consumed over the 4â€day experiment per amphipodâ€day, was measured for D. villosus and G. pulex under extreme temperature and conductivity conditions, in single species and mixed species aquaria.At high temperatures (25Â°C), D. villosus shredded significantly more leaves than sizeâ€matched G. pulex. Conductivity extremes had no species effect; overall leafâ€shredding efficiency was significantly greater at low conductivity (250 Î¼S cmâ€1) than high conductivity (1870 Î¼S cmâ€1).An inspection of daily leaf disc consumption found that the two species showed significantly different leaf consumption patterns, with D. villosus consuming more leaves earlier in the experiment.These results suggest that D. villosus invasion could lead to ecosystemâ€level changes in leaf processing, such as greater leaf processing earlier in autumn and at higher temperatures, which could alter nutrient dynamics and community assemblages within invaded systems. Such effects may not be reflected in biotic indices used to assess ecological status, as these indices do not currently distinguish between native and invasive species in the same family
 
-Extract the information as instructed from this article title and abstract.
-
-Title: Modes of invasion during tumour dissemination
-Abstract: Cancer cell migration and invasion underlie metastatic dissemination, one of the major problems in cancer. Tumour cells exhibit a striking variety of invasion strategies. Importantly, cancer cells can switch between invasion modes in order to cope with challenging environments. This ability to switch migratory modes or plasticity highlights the challenges behind antimetastasis therapy design. In this Review, we present current knowledge on different tumour invasion strategies, the determinants controlling plasticity and arising therapeutic opportunities. We propose that targeting master regulators controlling plasticity is needed to hinder tumour dissemination and metastasis.</p
-
-----------
-Response
-----------
-
-```json
+Extracted Information:
+ ```json
 {
-  "result": "N/A"
+  "species": [
+    {
+      "name": "Dikerogammarus villosus",
+      "type": "invasive"
+    },
+    {
+      "name": "Gammarus pulex",
+      "type": "native"
+    }
+  ],
+  "habitat": "freshwater",
+  "location": "Europe",
+  "ecosystem": "leaf-litter processing in freshwater environments",
+  "relations": [
+    {
+      "type": "competition",
+      "between": ["Dikerogammarus villosus", "Gammarus pulex"],
+      "description": "Dikerogammarus villosus is displacing native Gammarus pulex due to its invasive success attributed to environmental tolerance and broader feeding niche."
+    },
+    {
+      "type": "impact",
+      "species": "Dikerogammarus villosus",
+      "ecosystem": "leaf-litter processing",
+      "description": "Invasive D. villosus processes leaves more efficiently than G. pulex under high temperatures, suggesting alterations in nutrient dynamics and community assemblages."
+    },
+    {
+      "type": "environmental condition",
+      "species": "Dikerogammarus villosus",
+      "conditions": "high temperatures",
+      "description": "D. villosus shredded more leaves than G. pulex at high temperatures (25°C)."
+    },
+    {
+      "type": "environmental condition",
+      "factor": "conductivity",
+      "description": "Overall leaf-shredding efficiency was greater at low conductivity (250 μS cm−1) than high conductivity (1870 μS cm−1), with no species-specific effect."
+    }
+  ]
 }
 ```
-

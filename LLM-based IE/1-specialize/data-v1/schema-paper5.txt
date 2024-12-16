@@ -1,50 +1,55 @@
-Enter article title (or type 'exit' to quit): Ecosystem vulnerability to alien and invasive species: a case study on marine habitats along the Italian coast
-Enter article abstract: Spread of alien species (AS) is a serious threat to marine habitats and analysis of principal descriptors of their occurrence is pivotal to set reliable conservation strategies. In order to assess the susceptibility of marine habitats to biological invasions, a dataset was gathered of the occurrence of 3899 species from 29 phyla, taken from 93 marine sites located along the Italian coast in the period 2000-2012. In total, 61 AS belonging to 11 phyla have been recorded. Invertebrates were the most represented (63%). Alien species were found in all the habitats examined (EUNIS, level 2), although they showed highest abundance in benthic habitats. Most of the AS were associated with a single EUNIS habitat, while some of them were present in more than one habitat. Trans-habitat occurrence suggests the potential invasiveness of AS. According to statistical analysis, AS recorded could have been more numerous, since some of the marine habitats seemed to be still unsaturated. The model that best describes the spread of AS takes account of both native species richness (Rn) and EUNIS habitat type as explanatory variables. The number of observed AS was directly related to Rn and it was highest in rocky circalittoral and infralittoral habitats. The results of this macro-ecological study focus on the importance of performing large-scale studies, since adopting ecosystem approaches to marine invasion management seems especially fruitful. The results, moreover, highlight the importance of AS monitoring of different habitats, from those subjected to anthropogenic pressure, historically considered to be hubs of introduction of AS, to the most biologically rich and diverse marine habitats. Indeed, it is necessary to set monitoring strategies to detect the introduction, the distribution and persistence of AS over time. These recommendations are especially significant in the light of the strategic plans currently under formulation in Mediterranean countries with regard to AS monitoring. Â© 2016 John Wiley & Sons, Ltd
+Enter article title (or type 'exit' to quit): The role of salmonid fishes in conservation of the endangered freshwater pearl mussel (Margaritifera margaritifera)
+Enter article abstract: The abundance of freshwater pearl mussels (Margaritifera margaritifera) has   declined widely during the past century, and new conservation initiatives are   needed. This thesis focused on the relationship between M. margaritifera and its   salmonid host required for reproduction of this species. First, by exposing fish   experimentally to glochidium larvae of M. margaritifera, different M. margaritifera   populations were shown to demonstrate strong differences in their ability to   parasitize different salmonid species. Atlantic salmon was clearly a better host for   mussels in large river channels, whereas in small headwater tributaries brown   trout was the best, or the only suitable, host. These findings provide a previously   unrecognised explanation for the collapse and the lack of recruitment especially of   the salmon-specific M. margaritifera populations; a high proportion of large   salmon rivers were dammed for hydropower production in the 1960s, which   prevented the migration of salmon and thus left M. margaritifera without the   appropriate host in these rivers. Furthermore, an invasive salmonid, brook trout,   was widely introduced to small tributaries above the dams in the past, but in this   study was shown to be an unsuitable host for M. margaritifera. Thus, and due to   the tendency of brook trout to replace native brown trout, the spread of brook   trout is an additional threat to M. margaritifera. An indication of local adaptation of   M. margaritifera, i.e. higher infectivity in sympatric salmonid host strain than in   allopatric populations of the same species, was also detected. Finally, a new, non-  destructive approach to search for M. margaritifera populations, involving   electrofishing and quick visual examination of the gills of captured salmonids,   revealed the occurrence of 3 previously unknown populations. The results of this   thesis highlight the importance of taking into account the roles of salmonid fish in   future efforts to search, protect and restore freshwater pearl mussel populations
 
 Extracted Information:
  ```json
 {
-  "species": "alien species (AS)",
-  "habitat": [
+  "species": [
     {
-      "name": "benthic habitats",
-      "relation": "highest abundance of alien species"
+      "name": "Margaritifera margaritifera",
+      "common_name": "freshwater pearl mussel"
     },
     {
-      "name": "rocky circalittoral habitats",
-      "relation": "high number of observed alien species"
+      "name": "Salmo salar",
+      "common_name": "Atlantic salmon"
     },
     {
-      "name": "infralittoral habitats",
-      "relation": "high number of observed alien species"
+      "name": "Salmo trutta",
+      "common_name": "brown trout"
     },
     {
-      "name": "marine habitats (EUNIS, level 2)",
-      "relation": "presence of alien species"
+      "name": "Salvelinus fontinalis",
+      "common_name": "brook trout"
     }
   ],
-  "location": "Italian coast",
-  "ecosystem": "marine habitats",
+  "habitats": [
+    "large river channels",
+    "small headwater tributaries"
+  ],
+  "locations": [
+    "rivers dammed for hydropower production"
+  ],
+  "ecosystems": [
+    "freshwater ecosystems"
+  ],
   "relations": [
     {
-      "species": "alien species (AS)",
-      "habitat": "benthic habitats",
-      "relation": "highest abundance"
+      "type": "host",
+      "species": "Margaritifera margaritifera",
+      "host_species": "Salmo salar",
+      "habitat": "large river channels"
     },
     {
-      "species": "alien species (AS)",
-      "habitat": "marine habitats (EUNIS, level 2)",
-      "relation": "found in all habitats examined"
+      "type": "host",
+      "species": "Margaritifera margaritifera",
+      "host_species": "Salmo trutta",
+      "habitat": "small headwater tributaries"
     },
     {
-      "species": "alien species (AS)",
-      "habitat": "rocky circalittoral habitats",
-      "relation": "highest number of observed species"
-    },
-    {
-      "species": "alien species (AS)",
-      "habitat": "infralittoral habitats",
-      "relation": "highest number of observed species"
+      "type": "invasive_threat",
+      "species": "Margaritifera margaritifera",
+      "invasive_species": "Salvelinus fontinalis",
+      "reason": "unsuitable host and replaces native Salmo trutta"
     }
   ]
 }

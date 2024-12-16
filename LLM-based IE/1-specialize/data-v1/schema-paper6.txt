@@ -1,56 +1,30 @@
-Enter article title (or type 'exit' to quit): The role of salmonid fishes in conservation of the endangered freshwater pearl mussel (Margaritifera margaritifera)
-Enter article abstract: The abundance of freshwater pearl mussels (Margaritifera margaritifera) has   declined widely during the past century, and new conservation initiatives are   needed. This thesis focused on the relationship between M. margaritifera and its   salmonid host required for reproduction of this species. First, by exposing fish   experimentally to glochidium larvae of M. margaritifera, different M. margaritifera   populations were shown to demonstrate strong differences in their ability to   parasitize different salmonid species. Atlantic salmon was clearly a better host for   mussels in large river channels, whereas in small headwater tributaries brown   trout was the best, or the only suitable, host. These findings provide a previously   unrecognised explanation for the collapse and the lack of recruitment especially of   the salmon-specific M. margaritifera populations; a high proportion of large   salmon rivers were dammed for hydropower production in the 1960s, which   prevented the migration of salmon and thus left M. margaritifera without the   appropriate host in these rivers. Furthermore, an invasive salmonid, brook trout,   was widely introduced to small tributaries above the dams in the past, but in this   study was shown to be an unsuitable host for M. margaritifera. Thus, and due to   the tendency of brook trout to replace native brown trout, the spread of brook   trout is an additional threat to M. margaritifera. An indication of local adaptation of   M. margaritifera, i.e. higher infectivity in sympatric salmonid host strain than in   allopatric populations of the same species, was also detected. Finally, a new, non-  destructive approach to search for M. margaritifera populations, involving   electrofishing and quick visual examination of the gills of captured salmonids,   revealed the occurrence of 3 previously unknown populations. The results of this   thesis highlight the importance of taking into account the roles of salmonid fish in   future efforts to search, protect and restore freshwater pearl mussel populations
+Enter article title (or type 'exit' to quit): Population-level compensation impedes biological control of an invasive forb and indirect release of a native grass
+Enter article abstract: The intentional introduction of specialist insect herbivores for biological control of exotic weeds provides ideal but understudied systems for evaluating important ecological concepts related to top-down control, plant compensatory responses, indirect effects, and the influence of environmental context on these processes. Centaurea stoebe (spotted knapweed) is a notorious rangeland weed that exhibited regional declines in the early 2000s, attributed to drought by some and to successful biocontrol by others. We initiated an experiment to quantify the effects of the biocontrol agent, Cyphocleonus achates, on Ce. stoebe and its interaction with a dominant native grass competitor, Pseudoroegneria spicata, under contrasting precipitation conditions. Plots containing monocultures of each plant species or equal mixtures of the two received factorial combinations of Cy. achates herbivory (exclusion or addition) and precipitation (Mayâ€"June drought or â€œnormal,â€ defined by the 50-year average) for three years. Cy. achates herbivory reduced survival of adult Ce. stoebe plants by 9% overall, but this effect was stronger under normal precipitation compared to drought conditions, and stronger in mixed-species plots compared to monocultures. Herbivory had no effect on Ce. stoebe per capita seed production or on recruitment of seedlings or juveniles. In normal-precipitation plots of mixed composition, greater adult mortality due to Cy. achates herbivory resulted in increased recruitment of new adult Ce. stoebe. Due to this compensatory response to adult mortality, final Ce. stoebe densities did not differ between herbivory treatments regardless of context. Experimental drought reduced adult Ce. stoebe survival in mixed-species plots but did not impede recruitment of new adults or reduce final Ce. stoebe densities, perhaps due to the limited duration of the treatment. Ce. stoebe strongly depressed P. spicata reproduction and recruitment, but these impacts were not substantively alleviated by herbivory on Ce. stoebe. Population-level compensation by dominant plants may be an important factor inhibiting top-down effects in herbivore-driven and predator-driven cascades
 
 Extracted Information:
  ```json
 {
-  "species": [
-    {
-      "name": "Margaritifera margaritifera",
-      "common_name": "freshwater pearl mussel"
-    },
-    {
-      "name": "Salmo salar",
-      "common_name": "Atlantic salmon"
-    },
-    {
-      "name": "Salmo trutta",
-      "common_name": "brown trout"
-    },
-    {
-      "name": "Salvelinus fontinalis",
-      "common_name": "brook trout"
-    }
-  ],
-  "habitats": [
-    "large river channels",
-    "small headwater tributaries"
-  ],
-  "locations": [
-    "rivers dammed for hydropower production"
-  ],
-  "ecosystems": [
-    "freshwater ecosystems"
-  ],
-  "relations": [
-    {
-      "type": "host",
-      "species": "Margaritifera margaritifera",
-      "host_species": "Salmo salar",
-      "habitat": "large river channels"
-    },
-    {
-      "type": "host",
-      "species": "Margaritifera margaritifera",
-      "host_species": "Salmo trutta",
-      "habitat": "small headwater tributaries"
-    },
-    {
-      "type": "invasive_threat",
-      "species": "Margaritifera margaritifera",
-      "invasive_species": "Salvelinus fontinalis",
-      "reason": "unsuitable host and replaces native Salmo trutta"
-    }
-  ]
+    "species": [
+        "Centaurea stoebe",
+        "Cyphocleonus achates",
+        "Pseudoroegneria spicata"
+    ],
+    "habitat": "rangeland",
+    "location": "N/A",
+    "ecosystem": "plant community with mixed monocultures and mixtures of Centaurea stoebe and Pseudoroegneria spicata",
+    "relations": [
+        {
+            "subject": "Cyphocleonus achates",
+            "action": "herbivory impacts",
+            "object": "Centaurea stoebe",
+            "context": "reduced survival under normal precipitation, stronger effect in mixed-species plots"
+        },
+        {
+            "subject": "Centaurea stoebe",
+            "action": "depresses",
+            "object": "Pseudoroegneria spicata",
+            "context": "impacts reproduction and recruitment, not alleviated by Cyphocleonus achates herbivory"
+        }
+    ]
 }
 ```

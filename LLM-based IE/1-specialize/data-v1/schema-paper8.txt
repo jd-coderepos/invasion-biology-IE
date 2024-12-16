@@ -1,45 +1,37 @@
-Enter article title (or type 'exit' to quit): Exotic species, fisheries and conservation of freshwater biodiversity in tropical Asia: The case of the Sepik River, Papua New Guinea
-Enter article abstract: 1. Development of effective conservation strategies for freshwater biodiversity must take account of the trade-off between species preservation and human use of ecosystem goods and services. The latter cannot be prevented, and attempts to manage ecosystems that focus solely on maximizing biodiversity will fail. 2. A compromise position of management for ecosystem functioning and human livelihoods - rather than preservation of every species - will provide a better basis for biodiversity conservation. This has implications for the management of exotic species. 3. There are some situations, in lentic habitats in Sri Lanka, for example, where the establishment of exotics has increased fishery yields without apparent detriment to native biodiversity. The Sepik River in Papua New Guinea provides another illustration of potential compromises between human livelihoods and biodiversity conservation. 4. The Sepik supports a relatively unproductive fishery. Two fish stocking projects (in 1987-93 and 1993-97), representing a partnership between the Papua New Guinea Government and the United Nations (UNDP/FAO), led to the introduction of a suite of exotic fish into the Sepik. Species were selected on the basis of their potential to occupy niches not filled by native fish. Unfortunately, the outcomes of these introductions are poorly documented, although there is preliminary evidence both of increased human use of exotic fish as well as declines of some native species associated with the spread of exotics. 5. Better understanding of the results of the Sepik fish introductions is important, because the pressures of burgeoning human populations in most of tropical Asia make it impossible to preserve near-pristine environments such as the Sepik. While attempts to conserve natural or near-natural systems must remain a priority, there is a need to develop strategies for the management of damaged or degraded ecosystems, which may contain exotics, with the aim of maintaining ecosystem functioning and, if possible, maximizing the persistence of native biodiversity. Copyright Â© 2006 John Wiley & Sons, Ltd.link_to_subscribed_fulltex
+Enter article title (or type 'exit' to quit): Effects of habitat-modifying invasive macroalgae on epiphytic algal communities
+Enter article abstract: Although invasive species can negatively impact communities via processes such as resource competition, they may also add new resources that facilitate the distribution and/or abundance of other organisms. In rocky intertidal systems, many benthic macroalgae compete for primary substrate, while providing secondary substrata to which sessile organisms can attach. Using field surveys and laboratory experiments, we investigated algal host-epiphyte dynamics in a New England rocky intertidal system. First, we compared the composition, abundance, richness, and diversity of epiphytes on 2 invasive macroalgal species, Codium fragile ssp. tomentosoides and Grateloupia turuturu, to 2 native macroalgal species, Chondrus crispus and Fucus vesiculosus. We found significant differences among epiphyte communities, as all macroalgal hosts supported different assemblages of species. While epiphyte richness and diversity were generally low on F. vesiculosus and G. turuturu year-round, they were low on C. crispus during the winter only. In contrast, epiphyte richness and diversity on C. fragile remained high throughout the year, suggesting that C. fragile plays an important role for supporting epiphytes during the cooler months. Second, we examined the relationship between epiphytes and a common herbivorous snail, Lacuna vincta. The abundance of juvenile L. vincta was positively correlated with 1 of the 2 most common epiphyte species, Neosiphonia harveyi. However, L. vincta showed a significant consumption preference for the other abundant epiphyte, Ceramium virgatum, in laboratory assays. Our results suggest that epiphyte facilitation by these invasive algal hosts is not only seasonally important for maintaining species richness and diversity, but may also provide both food and habitat for higher trophic levels. Â© Inter-Research 2010
 
 Extracted Information:
  ```json
 {
-  "species": [
-    "exotic fish",
-    "native fish"
-  ],
-  "habitat": [
-    "lentic habitats in Sri Lanka",
-    "Sepik River"
-  ],
-  "location": [
-    "Sri Lanka",
-    "Sepik River, Papua New Guinea"
-  ],
-  "ecosystem": [
-    "freshwater biodiversity",
-    "fisheries"
-  ],
-  "relations": [
-    {
-      "species": "exotic fish",
-      "habitat": "lentic habitats in Sri Lanka",
-      "location": "Sri Lanka",
-      "ecosystem": "fisheries",
-      "relation": "exotic species establishment increased fishery yields without apparent detriment to native biodiversity"
-    },
-    {
-      "species": "exotic fish",
-      "location": "Sepik River, Papua New Guinea",
-      "ecosystem": "fisheries",
-      "relation": "introduction of exotic fish aimed to fill niches not occupied by native fish, increase in human use of exotic fish observed"
-    },
-    {
-      "species": "native fish",
-      "location": "Sepik River, Papua New Guinea",
-      "ecosystem": "freshwater biodiversity",
-      "relation": "declines of some native species associated with the spread of exotic fish"
+    "species_relations": [
+        {
+            "invasive_species": "Codium fragile ssp. tomentosoides",
+            "native_species": "Chondrus crispus",
+            "epiphyte_species": [
+                "Neosiphonia harveyi",
+                "Ceramium virgatum"
+            ],
+            "associated_species": "Lacuna vincta"
+        },
+        {
+            "invasive_species": "Grateloupia turuturu",
+            "native_species": "Fucus vesiculosus",
+            "epiphyte_species": [
+                "Neosiphonia harveyi",
+                "Ceramium virgatum"
+            ],
+            "associated_species": "Lacuna vincta"
+        }
+    ],
+    "habitat": "rocky intertidal system",
+    "location": "New England",
+    "ecosystem_relations": {
+        "function": {
+            "invasive_macroalgae": "providing secondary substrata for sessile organisms",
+            "role_of_Codium_fragile": "important for supporting epiphytes during cooler months",
+            "epiphyte_facilitation": "maintaining species richness and diversity, providing food and habitat for higher trophic levels"
+        }
     }
-  ]
 }
 ```

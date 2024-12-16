@@ -1,30 +1,45 @@
-Enter article title (or type 'exit' to quit): Population-level compensation impedes biological control of an invasive forb and indirect release of a native grass
-Enter article abstract: The intentional introduction of specialist insect herbivores for biological control of exotic weeds provides ideal but understudied systems for evaluating important ecological concepts related to top-down control, plant compensatory responses, indirect effects, and the influence of environmental context on these processes. Centaurea stoebe (spotted knapweed) is a notorious rangeland weed that exhibited regional declines in the early 2000s, attributed to drought by some and to successful biocontrol by others. We initiated an experiment to quantify the effects of the biocontrol agent, Cyphocleonus achates, on Ce. stoebe and its interaction with a dominant native grass competitor, Pseudoroegneria spicata, under contrasting precipitation conditions. Plots containing monocultures of each plant species or equal mixtures of the two received factorial combinations of Cy. achates herbivory (exclusion or addition) and precipitation (Mayâ€"June drought or â€œnormal,â€ defined by the 50-year average) for three years. Cy. achates herbivory reduced survival of adult Ce. stoebe plants by 9% overall, but this effect was stronger under normal precipitation compared to drought conditions, and stronger in mixed-species plots compared to monocultures. Herbivory had no effect on Ce. stoebe per capita seed production or on recruitment of seedlings or juveniles. In normal-precipitation plots of mixed composition, greater adult mortality due to Cy. achates herbivory resulted in increased recruitment of new adult Ce. stoebe. Due to this compensatory response to adult mortality, final Ce. stoebe densities did not differ between herbivory treatments regardless of context. Experimental drought reduced adult Ce. stoebe survival in mixed-species plots but did not impede recruitment of new adults or reduce final Ce. stoebe densities, perhaps due to the limited duration of the treatment. Ce. stoebe strongly depressed P. spicata reproduction and recruitment, but these impacts were not substantively alleviated by herbivory on Ce. stoebe. Population-level compensation by dominant plants may be an important factor inhibiting top-down effects in herbivore-driven and predator-driven cascades
+Enter article title (or type 'exit' to quit): Exotic species, fisheries and conservation of freshwater biodiversity in tropical Asia: The case of the Sepik River, Papua New Guinea
+Enter article abstract: 1. Development of effective conservation strategies for freshwater biodiversity must take account of the trade-off between species preservation and human use of ecosystem goods and services. The latter cannot be prevented, and attempts to manage ecosystems that focus solely on maximizing biodiversity will fail. 2. A compromise position of management for ecosystem functioning and human livelihoods - rather than preservation of every species - will provide a better basis for biodiversity conservation. This has implications for the management of exotic species. 3. There are some situations, in lentic habitats in Sri Lanka, for example, where the establishment of exotics has increased fishery yields without apparent detriment to native biodiversity. The Sepik River in Papua New Guinea provides another illustration of potential compromises between human livelihoods and biodiversity conservation. 4. The Sepik supports a relatively unproductive fishery. Two fish stocking projects (in 1987-93 and 1993-97), representing a partnership between the Papua New Guinea Government and the United Nations (UNDP/FAO), led to the introduction of a suite of exotic fish into the Sepik. Species were selected on the basis of their potential to occupy niches not filled by native fish. Unfortunately, the outcomes of these introductions are poorly documented, although there is preliminary evidence both of increased human use of exotic fish as well as declines of some native species associated with the spread of exotics. 5. Better understanding of the results of the Sepik fish introductions is important, because the pressures of burgeoning human populations in most of tropical Asia make it impossible to preserve near-pristine environments such as the Sepik. While attempts to conserve natural or near-natural systems must remain a priority, there is a need to develop strategies for the management of damaged or degraded ecosystems, which may contain exotics, with the aim of maintaining ecosystem functioning and, if possible, maximizing the persistence of native biodiversity. Copyright Â© 2006 John Wiley & Sons, Ltd.link_to_subscribed_fulltex
 
 Extracted Information:
  ```json
 {
-    "species": [
-        "Centaurea stoebe",
-        "Cyphocleonus achates",
-        "Pseudoroegneria spicata"
-    ],
-    "habitat": "rangeland",
-    "location": "N/A",
-    "ecosystem": "plant community with mixed monocultures and mixtures of Centaurea stoebe and Pseudoroegneria spicata",
-    "relations": [
-        {
-            "subject": "Cyphocleonus achates",
-            "action": "herbivory impacts",
-            "object": "Centaurea stoebe",
-            "context": "reduced survival under normal precipitation, stronger effect in mixed-species plots"
-        },
-        {
-            "subject": "Centaurea stoebe",
-            "action": "depresses",
-            "object": "Pseudoroegneria spicata",
-            "context": "impacts reproduction and recruitment, not alleviated by Cyphocleonus achates herbivory"
-        }
-    ]
+  "species": [
+    "exotic fish",
+    "native fish"
+  ],
+  "habitat": [
+    "lentic habitats in Sri Lanka",
+    "Sepik River"
+  ],
+  "location": [
+    "Sri Lanka",
+    "Sepik River, Papua New Guinea"
+  ],
+  "ecosystem": [
+    "freshwater biodiversity",
+    "fisheries"
+  ],
+  "relations": [
+    {
+      "species": "exotic fish",
+      "habitat": "lentic habitats in Sri Lanka",
+      "location": "Sri Lanka",
+      "ecosystem": "fisheries",
+      "relation": "exotic species establishment increased fishery yields without apparent detriment to native biodiversity"
+    },
+    {
+      "species": "exotic fish",
+      "location": "Sepik River, Papua New Guinea",
+      "ecosystem": "fisheries",
+      "relation": "introduction of exotic fish aimed to fill niches not occupied by native fish, increase in human use of exotic fish observed"
+    },
+    {
+      "species": "native fish",
+      "location": "Sepik River, Papua New Guinea",
+      "ecosystem": "freshwater biodiversity",
+      "relation": "declines of some native species associated with the spread of exotic fish"
+    }
+  ]
 }
 ```
