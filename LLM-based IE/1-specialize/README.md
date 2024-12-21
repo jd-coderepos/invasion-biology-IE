@@ -1,4 +1,19 @@
-The task carried out here is the following: A Large Language Model (LLM), specifically GPT-4o, is prompted with a single paper at a time, and is asked to produce a data structure relating the following entities of information, viz. species, location, habitat, and ecosystem.
+### 🧐 Extracting Initial Schemas for Information Extraction (IE) from Scientific Paper Abstracts
 
-For this use case, 10 unique paper instances were selected. In all 10 cases, the LLM was prompted with the title and abstract of the paper. In case 2, the LLM was in addition prompted with the full text of the paper.
+This folder contains resources for a task focused on extracting initial schemas for Information Extraction (IE) from scientific paper abstracts using a Large Language Model (LLM), specifically GPT-4o. The extracted schemas relate key entities, including **species**, **location**, **habitat**, and **ecosystem**.
 
+#### Task Description
+
+- The LLM is prompted with a single paper at a time to generate a schema connecting the targeted entities.
+- **10 unique papers** were selected for this task:
+  - All 10 cases used the **title** and **abstract** of the paper for prompting.
+  - In case 2, the **full text** of the paper was also used to enhance schema generation.
+
+#### Folder Structure
+
+- **`code/`**: Contains scripts for prompting the LLM and processing the extracted schemas.
+- **`data/`**: Includes the input paper data (titles, abstracts, and full texts where applicable) and the resulting schemas.
+
+#### Usage
+
+Refer to the `code/` directory for scripts to replicate the schema extraction process and analyze the outputs.
