@@ -1,4 +1,4 @@
-### Bibliometric Analysis of Scientific Papers
+### 📊 Bibliometric Analysis of Scientific Papers
 
 This repository contains bibliometric analyses of a scientific paper corpus, focusing on trends across publication years and publishers.
 
